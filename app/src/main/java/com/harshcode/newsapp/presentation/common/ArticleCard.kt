@@ -107,7 +107,7 @@ fun ArticleCard(
 @Preview(showSystemUi = true, showBackground = true)
 @Preview(showSystemUi = true, showBackground = true, uiMode = UI_MODE_NIGHT_YES)
 @Composable
-fun ArticleCardPreview(modifier: Modifier = Modifier) {
+fun ArticleCardPreview() {
     NewsAppTheme() {
         ArticleCard(
             article = Article(
