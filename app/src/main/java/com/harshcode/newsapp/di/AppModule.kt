@@ -11,6 +11,7 @@ import com.harshcode.newsapp.domain.usecases.app_entry.ReadAppEntry
 import com.harshcode.newsapp.domain.usecases.app_entry.SaveAppEntry
 import com.harshcode.newsapp.domain.usecases.news.GetNews
 import com.harshcode.newsapp.domain.usecases.news.NewsUseCases
+import com.harshcode.newsapp.domain.usecases.news.SearchNews
 import com.harshcode.newsapp.util.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -62,7 +63,8 @@ object AppModule {
     fun provideNewsUseCases(
         newsRepository: NewsRepository
     ) = NewsUseCases(
-        getNews = GetNews(newsRepository = newsRepository)
+        getNews = GetNews(newsRepository = newsRepository),
+        searchNews = SearchNews(newsRepository = newsRepository)
     )
 }
 
