@@ -70,5 +70,13 @@ dependencies {
     implementation(libs.hilt.navigation.compose)
 
     implementation(libs.compose.navigation)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
 
+    //Paging 3
+    implementation(libs.paging.runtime)
+    implementation(libs.paging.compose)
+
+    //Coil
+    implementation(libs.coil)
 }
