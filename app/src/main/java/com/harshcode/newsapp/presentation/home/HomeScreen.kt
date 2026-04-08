@@ -13,22 +13,20 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.paging.compose.LazyPagingItems
-import com.harshcode.newsapp.domain.model.Article
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.paging.compose.LazyPagingItems
 import com.harshcode.newsapp.R
+import com.harshcode.newsapp.domain.model.Article
 import com.harshcode.newsapp.presentation.Dimens.MediumPadding1
 import com.harshcode.newsapp.presentation.common.ArticlesList
 import com.harshcode.newsapp.presentation.common.SearchBar
 import com.harshcode.newsapp.presentation.navGraph.Route
-import com.harshcode.newsapp.ui.theme.NewsAppTheme
 
 @Composable
 fun HomeScreen(
@@ -48,7 +46,6 @@ fun HomeScreen(
             }
         }
     }
-
     Column(
         modifier = modifier
             .fillMaxSize()
